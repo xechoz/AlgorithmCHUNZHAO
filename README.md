@@ -23,3 +23,21 @@
 ## 注意事项
 
  如果对 Git 和 GitHub 不太了解，请参考 [Git 官方文档](https://git-scm.com/book/zh/v2) 或者极客时间的[《玩转 Git 三剑客》](https://time.geekbang.org/course/intro/145)视频课程。
+
+
+## 作业
+
+1. [Week 01](./Week_01)
+1. [Week 02](./Week_02)
+1. [Week 03](./Week_03)
+1. [Week 04](./Week_04)
+1. [Week 05](./Week_05)
+1. [Week 06](./Week_06)
+1. [Week 07](./Week_07)
+
+
+## kotlin 项目
+
+[春招左右项目](https://github.com/xechoz/HomeWork)
+
+可以直接运行的 kotlin project，fork 下来后，在 main 函数执行你要测试的代码
