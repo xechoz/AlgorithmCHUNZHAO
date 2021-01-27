@@ -1,16 +1,5 @@
 import java.util.*
 
-fun main(args: Array<String>) {
-    println("Hello World!")
-    val nums = intArrayOf()
-    val len = removeDuplicates(nums)
-    println("len $len")
-
-    (0 until len).forEach {
-        print("${nums[it]} ")
-    }
-}
-
 /**
  * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
  */
@@ -244,70 +233,70 @@ class MyCircularDeque(private val k: Int) {
     /** Checks whether the circular deque is full or not. */
     fun isFull() = size == k
 }
-
-/**
- * 用 add first 或 add last 这套新的 API 改写 Deque 的代码。
- *
- * 题目的意思是，实现一个 Deque, 提供 addFirst, addLast 两个接口？
- */
-class Deque<E>(private val list: ArrayList<E> = ArrayList()) : Queue<E>, Collection<E> by list {
-    fun addFirst(e: E) {
-        list.add(0, e)
-    }
-
-    fun addLast(e: E) {
-        list.add(e)
-    }
-
-
-    override fun iterator(): Iterator<E> {
-       return list.iterator()
-    }
-
-    override fun add(element: E): Boolean {
-        return list.add(element)
-    }
-
-    override fun remove(): E {
-        return list.removeFirst()
-    }
-
-    override fun offer(e: E): Boolean {
-       return list.add(e)
-    }
-
-    override fun poll(): E {
-       return list.removeFirst()
-    }
-
-    override fun element(): E {
-        return list.first()
-    }
-
-    override fun peek(): E {
-       return list.last()
-    }
-
-    override fun addAll(elements: Collection<E>): Boolean {
-        TODO("Not yet implemented")
-    }
-
-    override fun clear() {
-        TODO("Not yet implemented")
-    }
-
-    override fun remove(element: E): Boolean {
-        TODO("Not yet implemented")
-    }
-
-    override fun removeAll(elements: Collection<E>): Boolean {
-        TODO("Not yet implemented")
-    }
-
-    override fun retainAll(elements: Collection<E>): Boolean {
-        TODO("Not yet implemented")
-    }
-}
+//
+///**
+// * 用 add first 或 add last 这套新的 API 改写 Deque 的代码。
+// *
+// * 题目的意思是，实现一个 Deque, 提供 addFirst, addLast 两个接口？
+// */
+//class Deque<E>(private val list: ArrayList<E> = ArrayList()) : Queue<E>, Collection<E> by list {
+//    fun addFirst(e: E) {
+//        list.add(0, e)
+//    }
+//
+//    fun addLast(e: E) {
+//        list.add(e)
+//    }
+//
+//
+//    override fun iterator(): Iterator<E> {
+//       return list.iterator()
+//    }
+//
+//    override fun add(element: E): Boolean {
+//        return list.add(element)
+//    }
+//
+//    override fun remove(): E {
+//        return list.removeFirst()
+//    }
+//
+//    override fun offer(e: E): Boolean {
+//       return list.add(e)
+//    }
+//
+//    override fun poll(): E {
+//       return list.removeFirst()
+//    }
+//
+//    override fun element(): E {
+//        return list.first()
+//    }
+//
+//    override fun peek(): E {
+//       return list.last()
+//    }
+//
+//    override fun addAll(elements: Collection<E>): Boolean {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun clear() {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun remove(element: E): Boolean {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun removeAll(elements: Collection<E>): Boolean {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun retainAll(elements: Collection<E>): Boolean {
+//        TODO("Not yet implemented")
+//    }
+//}
 /**
  * 分析 Queue 和 Priority Queue 的源码。
  */
