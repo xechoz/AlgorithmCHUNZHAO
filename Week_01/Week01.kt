@@ -146,7 +146,7 @@ class MyCircularDeque(private val k: Int) {
     private var head: Node? = null
     private var tail: Node? = null
 
-    class Node(var value: Int, var next: Node? = null, var previous: Node? = null)
+    private class Node(var value: Int, var next: Node? = null, var previous: Node? = null)
 
     /** Initialize your data structure here. Set the size of the deque to be k. */
 

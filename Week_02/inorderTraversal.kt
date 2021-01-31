@@ -1,10 +1,8 @@
 package chunzhao.Week_02
 
+import chunzhao.common.TreeNode
 import java.util.*
 import kotlin.collections.ArrayList
-
-class main {
-}
 
 /**
  * Example:
@@ -16,12 +14,6 @@ class main {
  *     var right: TreeNode? = null
  * }
  */
-
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
-
 private val result = ArrayList<Int>(1024) // 预加载
 
 fun inorderTraversal(root: TreeNode?): List<Int> {

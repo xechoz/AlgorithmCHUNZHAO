@@ -44,3 +44,22 @@ fun postOrder() {
     traversalPath.append(root.`val`)
 }
 ``` 
+
+```kotlin
+fun backtrack(result, path, select) {
+    if (is end) {
+        result.add(copy path)
+    }
+    
+    forEach in select { it ->
+        path.add(it)
+        backtrack(result, path, select)
+        path.remove(it)
+    }
+}
+```
+
+## 不够熟悉
+
+DFS, backtrack
+
