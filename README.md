@@ -38,6 +38,6 @@
 
 ## kotlin 项目
 
-[春招左右项目](https://github.com/xechoz/HomeWork)
+[春招作业项目](https://github.com/xechoz/HomeWork)
 
 可以直接运行的 kotlin project，fork 下来后，在 main 函数执行你要测试的代码
